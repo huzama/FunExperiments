@@ -1,0 +1,33 @@
+<input type="text" placeholder="Year of Movie" id="Years" >
+<input type="text" placeholder="Name of Movie" id="myInput" (keyup)="onType($event)">
+
+<h2>Movies</h2>
+<ul *ngFor="let test of Titles">
+<li (click)="onSelct(test.imdbID)">
+       {{test.Title}}
+</li>
+
+</ul>
+
+<h2>Movie Details</h2>
+
+<ul >
+        <li>
+                Name = {{detail.Title}}
+            </li>
+            <li>
+                    On Air time = {{detail.Released}}
+                </li>
+                <li>
+                        Genre = {{detail.Genre}}
+                    </li>
+                    <li>
+                            Actors = {{detail.Actors}}
+                        </li>
+                        <li>
+                                IMdb Ratings = {{detail.Ratings[0].Value}}
+                            </li>
+                                        
+    
+                    <img src={{detail.Poster}} alt="Italian Trulli">
+</ul>
