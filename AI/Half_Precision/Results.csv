@@ -1,0 +1,12 @@
+Model
+# Parameters,Task,Dataset,Epoch,Batch Size
+" 48,056,322 ",Classification,IMDb,2,64
+
+Metrics
+Model Name,Memory,Speed,Top-1 Acc.,
+Float - TF32,16 GiB,3.05 s/it,82.2,
+Float (Default),16 GiB,4.35 s/it,78.6,
+Float16 - TF32,11 GiB,2.9 s/it,80.8,
+Float16,11 Gib,4.0 s/it,78.5,
+Bfloat16 - TF32,12 GiB,2.95 s/it,78.3,
+Bfloat16,12 GiB,4.07 s/it,79.5,
